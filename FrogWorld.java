@@ -8,14 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class FrogWorld extends greenfoot.World
 {
-
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
+    private Frog frog;
+    
     public FrogWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(560, 560, 1); 
+        frog=new Frog();
+        addObject(frog,280,530);
     }
 }
